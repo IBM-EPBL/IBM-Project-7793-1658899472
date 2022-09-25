@@ -7,4 +7,5 @@ Team Members:
 4. Vasundhhara Singh
 
 Industry Mentors: Sowjanya, Sandeep
+
 Faculty Mentor: Bhuvana J
