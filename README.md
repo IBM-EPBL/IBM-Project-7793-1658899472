@@ -6,6 +6,6 @@ Team Members:
 3. Pratishtha
 4. Vasundhhara Singh
 
-Industry Mentors: Sowjanya, Sandeep
+Industry Mentors: Mahidhar, Mohammed Azhar Uddin
 
 Faculty Mentor: Bhuvana J
