@@ -6,6 +6,6 @@ Team Members:
 3. Pratishtha
 4. Vasundhhara Singh
 
-Industry Mentors: Mahidhar, Mohammed Azhar Uddin
+Industry Mentors: Prof Swetha
 
 Faculty Mentor: Bhuvana J
