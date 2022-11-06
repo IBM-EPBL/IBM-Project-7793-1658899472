@@ -1,2 +1,3 @@
-Sprint 1
+Sprint 1:
+
 Login and Register Page
