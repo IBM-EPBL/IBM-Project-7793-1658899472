@@ -1,16 +1,16 @@
 #SPRINT 4
 
->**Install libraries**
-*pip install flask
-*pip install flask_cors
-*pip install joblib
-*pip install scikit-learn
-*pip intall numpy
-*pip install pandas
-*pip install scikit-image
-*pip install os
-*pip install cv2
-*pip install sqlite3
+**Install libraries**
+-pip install flask <br>
+-pip install flask_cors <br>
+-pip install joblib <br>
+-pip install scikit-learn <br>
+-pip intall numpy <br>
+-pip install pandas <br>
+-pip install scikit-image <br>
+-pip install os <br>
+-pip install cv2 <br>
+-pip install sqlite3 <br>
 
->**Run app.py**
-*python app.py
+**Run app.py**
+-python app.py
