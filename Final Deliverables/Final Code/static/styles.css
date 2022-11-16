@@ -68,8 +68,29 @@ body{
     padding-bottom: 5%;
 }
 
+.text4{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 5%;
+    padding-top: 5%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 80%;
+    padding-bottom: 5%;
+}
+
 .bg-img {
     min-height: 650px;
+    background-position:0%;
+    background-repeat: no-repeat;
+}
+
+.bg-img2 {
+    min-height: 50px;
     background-position:0%;
     background-repeat: no-repeat;
 }

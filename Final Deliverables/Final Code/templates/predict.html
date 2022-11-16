@@ -4,12 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>PARKINSON'S DISEASE Category</title>
+    <style>
+        
+        body{
+            background-image: url("{{ url_for('static', filename='predict.jpg') }}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            
+        }
+        .text{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 25%;;
+            bottom: 25%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-weight: bold;
+            color:aliceblue;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.7);
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            width: 40%;
+        }
+        a{
+            text-decoration: none;
+            color:aliceblue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <title>Prediction</title>
 </head>
+
 <body>
-    <h1>The predicted result is::</h1>
-    <h1>{{predict}}</h1>
-    <a href="/welcome">Go Back</a>
+    <div class="text">
+        <h1>The predicted result is:</h1>
+        <h1>{{predict}}</h1>
+        <a href="/welcome">Click here to go Back to the Dashboard</a> 
+    </div>
+    <script src="{{ url_for('static', filename='confetti.js') }}"></script>
+    <script>
+         const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti 
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+// after this here we are calling both the function so it works
+        start();
+        stop();
+    </script>
 </body>
 </html>
