@@ -1,5 +1,5 @@
 # IBM-Project-7793-1658899472
-**Project title** : Detection of Parkinson’s Disease using Machine Learning
+**Project title** : Detection of Parkinson’s Disease using Machine Learning <br>
 **Technology Bucket** : Data Analytics
 
 ## Team Members:
