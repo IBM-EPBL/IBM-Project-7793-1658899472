@@ -1,4 +1,4 @@
-# This folder contains:
+# The following folder contains:
 - [Sprint-1](https://github.com/IBM-EPBL/IBM-Project-7793-1658899472/tree/main/Project%20Development%20Phase/Sprint%201)
   - Login & Registration
 - [Sprint-2](https://github.com/IBM-EPBL/IBM-Project-7793-1658899472/tree/main/Project%20Development%20Phase/Sprint%202)
