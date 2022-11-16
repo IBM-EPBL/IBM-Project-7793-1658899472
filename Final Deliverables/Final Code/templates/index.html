@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+    <title>DETECTION OF PARKINSON'S DISEASE</title>
+    <style>
+        body{
+            background-image: url("{{ url_for('static',filename='bg.webp') }}");
+            min-height: 520px;
+        }
+    </style>
+    <!-- <style>
+        body{
+            background-image: url("bg.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(10px);
+            color:white;
+        }
+        .text{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            padding-top: 10%;
+        }
+
+    </style> -->
+</head>
+<body>
+    <div class="bg-img">
+        <div class="topnav">
+            <div class="topnav-right">
+                <a href="{{url_for('welcome')}}">Home</a>
+                <a href="{{url_for('about')}}">About</a>
+                <a href="{{url_for('sendHomePage')}}">Predict</a>
+                <a href="{{url_for('logout')}}">Logout</a>
+            </div>
+        </div>
+        <div class="text1">
+            <h1 style="color: black;">Parkinson Detection</h1> <br>
+            <div class="content-section" style="color: black;">
+            <form method="POST" action="/predict" enctype = "multipart/form-data">
+                <input type="radio" name="dataset" value="spiral">
+                <label for="spiral">SPIRAL</label><br>
+                <input type="radio" name="dataset" value="wave">
+                <label for="wave">WAVE</label><br>
+                <p>Input the Spiral or Wave Image</p>
+                <input type = "file" name = "file" required>
+                <br>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+            </div>
+    </div>
+    
+</body>
+</html>

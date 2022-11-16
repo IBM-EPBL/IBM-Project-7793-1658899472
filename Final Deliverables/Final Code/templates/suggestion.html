@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUGESSTIONS</title>
+</head>
+<body>
+    <h1>The predicted result is::</h1>
+    <h1>Parkinson</h1>
+    <br><br>
+    <h1>SUGGESTIONS</h1>
+    
+    <div id='showCD'></div><br>
+    <input type="button" onclick="previous()" value="<<">
+    <input type="button" onclick="next()" value=">>">
+
+    <script>
+    var i = 0;
+    const suggestion = ["Massage Therapy", "Yoga", "Tai Chi","Physical, occupational, and speech therapies", "Healthy Diet - Oatmeal for breakfast, protein intake, Nuts, Berries, Leafy Green Vegetables, Kidney Beans, Oysters", "Exercises to strengthen muscles and improve balance, flexibility, and coordination"
+    , "Anticholinergic drugs to reduce tremors and muscle rigidity", "Amantadine to help reduce involuntary movements", "Acupuncture", "Movement Therapies"]
+    displayCD(i);
+    function displayCD(i){
+        document.getElementById("showCD").innerHTML = suggestion[i]
+    }
+
+    function next() {
+    if (i < suggestion.length-1) {
+    i++;
+    displayCD(i);
+    }  }
+
+    function previous() {
+    if (i > 0) {
+    i--;
+    displayCD(i);
+    }    }
+    </script> 
+</body> 
+</html>
