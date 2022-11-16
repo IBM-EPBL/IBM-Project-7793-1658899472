@@ -1,6 +1,6 @@
 # SPRINT 4
 
-### Install libraries** <br>
+### Install libraries <br>
 - pip install flask <br>
 - pip install flask_cors <br>
 - pip install joblib <br>
@@ -12,5 +12,5 @@
 - pip install cv2 <br>
 - pip install sqlite3 <br>
 
-### **Run app.py** <br>
+### Run app.py <br>
 - python app.py
