@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+    
+    <style>
+        body{
+            background-color: rgb(62, 62, 125);
+        }
+        img{
+            /* background-size: cover; */
+            height: 500px;
+            width: 700px; 
+            border: 5px solid rgb(242, 236, 236);
+        }
+        .text{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            font-weight: bold;
+            color:aliceblue;
+            padding-top:4%;
+            padding-bottom: 2%;
+        }
+    </style>
+    <title>PARKINSON'S DISEASE Category</title>
+</head>
+
+<body>
+    
+    <div class="bg-img">
+        <div class="topnav">
+            <div class="topnav-right">
+                <a href="{{url_for('welcome')}}">Home</a>
+                <a href="{{url_for('about')}}">About</a>
+                <a href="{{url_for('sendHomePage')}}">Predict</a>
+                <a href="{{url_for('logout')}}">Logout</a>
+            </div>
+        </div>
+        <div class="text1" style="color: black;margin-top: 10px">
+            <img src="{{ url_for('static', filename='about.jpg') }}" title="Parkinson's Disease" style="align-items: center;">
+        </div>
+    </div>
+</body>
+</html>

@@ -5,37 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUGESSTIONS</title>
+    <style>
+        
+        body{
+            background-image: url("{{ url_for('static',filename='predict.jpg') }}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            
+        }
+        .text{
+            text-align: center;
+            align-items: center; 
+            justify-content: center;
+            position: absolute;
+            top: 15%;;
+            bottom: 15%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-weight: bold;
+            color:aliceblue;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.7);
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            width: 40%;
+        }
+        a{
+            text-decoration: none;
+            color:aliceblue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>The predicted result is::</h1>
-    <h1>Parkinson</h1>
-    <br><br>
-    <h1>SUGGESTIONS</h1>
-    
-    <div id='showCD'></div><br>
-    <input type="button" onclick="previous()" value="<<">
-    <input type="button" onclick="next()" value=">>">
-
+    <div class="text">
+        <h1>The predicted result is::</h1>
+        <h1>Parkinson</h1>
+        <a href="/welcome">Click here to go Back to the Dashboard</a>
+        <br><br>
+        <h1>SUGGESTIONS</h1>
+        
+        <div id='showCD'></div><br>
+        <input type="button" onclick="previous()" value="<<">
+        <input type="button" onclick="next()" value=">>">
+    </div>
     <script>
-    var i = 0;
-    const suggestion = ["Massage Therapy", "Yoga", "Tai Chi","Physical, occupational, and speech therapies", "Healthy Diet - Oatmeal for breakfast, protein intake, Nuts, Berries, Leafy Green Vegetables, Kidney Beans, Oysters", "Exercises to strengthen muscles and improve balance, flexibility, and coordination"
-    , "Anticholinergic drugs to reduce tremors and muscle rigidity", "Amantadine to help reduce involuntary movements", "Acupuncture", "Movement Therapies"]
-    displayCD(i);
-    function displayCD(i){
-        document.getElementById("showCD").innerHTML = suggestion[i]
-    }
+        var i = 0;
+        const suggestion = ["Massage Therapy", "Yoga", "Tai Chi","Physical, occupational, and speech therapies", "Healthy Diet - Oatmeal for breakfast, protein intake, Nuts, Berries, Leafy Green Vegetables, Kidney Beans, Oysters", "Exercises to strengthen muscles and improve balance, flexibility, and coordination"
+        , "Anticholinergic drugs to reduce tremors and muscle rigidity", "Amantadine to help reduce involuntary movements", "Acupuncture", "Movement Therapies"]
+        displayCD(i);
+        function displayCD(i){
+            document.getElementById("showCD").innerHTML = suggestion[i]
+        }
 
-    function next() {
-    if (i < suggestion.length-1) {
-    i++;
-    displayCD(i);
-    }  }
+        function next() {
+        if (i < suggestion.length-1) {
+        i++;
+        displayCD(i);
+        }  }
 
-    function previous() {
-    if (i > 0) {
-    i--;
-    displayCD(i);
-    }    }
+        function previous() {
+        if (i > 0) {
+        i--;
+        displayCD(i);
+        }    }
     </script> 
 </body> 
 </html>
