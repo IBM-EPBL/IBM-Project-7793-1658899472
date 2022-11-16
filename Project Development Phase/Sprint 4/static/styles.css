@@ -1,0 +1,103 @@
+* {box-sizing: border-box;}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    color:white;
+    height: 100%;
+}
+.text{
+    text-align: left;
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: 100px;
+    align-items: center;
+    padding-top: 15%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 40%;
+    padding-bottom: 5%;
+    padding: 10px 10px;
+}
+
+.text1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    align-items: center;
+    padding-top: 15%;
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255,255,255, 0);
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 5%;
+    padding: 10px 10px;
+}
+
+.text2{
+    text-align: left;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 250px;
+    align-items: center;
+    padding-top: 15%;
+    background-color: rgb(255,255,255); /* Fallback color */
+    background-color: rgba(255,255,255, 0);
+    font-weight: bold;
+    width: 60%;
+    padding-bottom: 5%;
+    padding: 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text3{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding-top: 5%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 80%;
+    padding-bottom: 5%;
+}
+
+.bg-img {
+    min-height: 650px;
+    background-position:0%;
+    background-repeat: no-repeat;
+}
+
+.topnav {
+    background-color: black;
+}
+  
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 30px 36px;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+}
+  
+.topnav a:hover {
+    background-color: orchid;
+    color: black;
+}
+  
+.topnav-right {
+    float: right;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
