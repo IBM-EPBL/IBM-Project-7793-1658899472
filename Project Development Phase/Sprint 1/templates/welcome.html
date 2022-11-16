@@ -4,16 +4,39 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>Dashboard</title>
+    <style>
+        .bg-img{
+            background-image: url("{{ url_for('static', filename='bg4.jpg') }}");
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome!</h1> <br>
-    <a href="{{url_for('logout')}}">Press here to logout</a>
-
+    <div class="bg-img">
+        <div class="topnav">
+            <div class="topnav-right">
+                <a href="{{url_for('welcome')}}">Home</a>
+                <a href="{{url_for('about')}}">About</a>
+                <a href="{{url_for('sendHomePage')}}">Predict</a>
+                <a href="{{url_for('logout')}}">Logout</a>
+            </div>
+        </div>
+        <div class="text1">
+            <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:black;font-weight: bold;">Detecting Parkinson's Disease using Machine Learning</h1> <br>
+        </div>
+        <div class="text2" style="color: black;">
+            <p>Parkinson's disease (PD) is a prevalent neurodegenerative disease affecting about 1% of the world population over the age of 55 (Nussbaum and Ellis, 2003). About five million people worldwide are estimated to have PD. PD prevalence is expected to double by the year 2030. Parkinson's disease (PD) patient care is limited by inadequate, sporadic symptom monitoring, infrevent access to care, and sparse encounters with healthcare professionals lead to poor medical decision making and sub-optimal patient health-related outcomes. Recent advances in digital health approaches have enabled objective and remote monitoring of impaired motor function with the promise of profoundly changing the diagnostic, monitoring, and therapeutic landscape in PD.</p>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
