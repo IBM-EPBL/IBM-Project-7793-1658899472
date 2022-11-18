@@ -7,3 +7,9 @@
   - Prediction
 - [Sprint-4](https://github.com/IBM-EPBL/IBM-Project-7793-1658899472/tree/main/Project%20Development%20Phase/Sprint%204)
   - Integration & Suggestions
+- Performance Testing
+  - [Model Performance Test](https://github.com/IBM-EPBL/IBM-Project-7793-1658899472/blob/main/Project%20Development%20Phase/Performance%20Testing/Model%20Performance%20Test.pdf)
+  - [Performance Risk Assessment](https://github.com/IBM-EPBL/IBM-Project-7793-1658899472/blob/main/Project%20Development%20Phase/Performance%20Testing/Performance%20Risk%20Assessment.pdf)
+- User Acceptance Testing
+  - [Testcase Report](https://github.com/IBM-EPBL/IBM-Project-7793-1658899472/blob/main/Project%20Development%20Phase/User%20Acceptance%20Testing/Testcase%20Report.pdf)
+  - [UAT Report Template](https://github.com/IBM-EPBL/IBM-Project-7793-1658899472/blob/main/Project%20Development%20Phase/User%20Acceptance%20Testing/UAT%20Report%20Template.pdf)
